@@ -1,16 +1,14 @@
 import config.ConfProperties;
 
 import java.io.*;
-import java.net.*;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
 
 
-        System.out.println(items);
+      /*  System.out.println(items);
         String name=items.get(0).getName();
         String encodedString = URLEncoder.encode(name, "UTF-8");
         System.out.println(encodedString);
@@ -30,7 +28,7 @@ public class Main {
                 .GET()
                 .build();
         HttpResponse<String> response2 = client.send(request2, HttpResponse.BodyHandlers.ofString());
-        System.out.println(response2.body());
+        System.out.println(response2.body());*/
     }
 
 }
