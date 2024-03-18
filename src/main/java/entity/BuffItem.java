@@ -1,6 +1,6 @@
 package entity;
 
-public class BuffItem {
+public class BuffItem implements ItemInterface{
     private String name;
     private double buffPrice;
     private double steamPrice;

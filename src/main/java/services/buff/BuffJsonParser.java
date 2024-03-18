@@ -3,14 +3,17 @@ package services.buff;
 import entity.BuffItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BuffJsonParser {
+@Component
+public class BuffJsonParser  {
+    public BuffJsonParser() {
+    }
 
-    public static BuffItem parseJsonBuff(JSONObject object){
+    public static BuffItem parseJsonBuff(JSONObject object) {
         String name=object.getString("name");
         double buffPrice=object.getDouble("sell_min_price");
         JSONObject steamInfo= object.getJSONObject("goods_info");
@@ -21,7 +24,7 @@ public class BuffJsonParser {
         return new BuffItem(name, buffPrice, steamPrice, quantity, steamHref, imageHref);
     }
 
-    public static List<BuffItem> parseBuffResponseToList(String body){
+    public List<BuffItem> parseResponseToList(String body){
         ArrayList<BuffItem> list=new ArrayList<>();
         JSONObject object=new JSONObject(body);
         System.out.println(body);

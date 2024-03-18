@@ -1,9 +1,10 @@
 package services;
 
 import entity.BuffItem;
+import entity.ItemInterface;
 
 import java.io.IOException;
 
 public interface IService {
-    public BuffItem searchByName(String name) throws IOException,InterruptedException;
+    public ItemInterface searchByName(String name) throws IOException,InterruptedException;
 }
