@@ -1,7 +1,7 @@
-package services.csmarket;
+package services.csmoney;
 
-import config.ConfProperties;
-import entity.CsMarketItem;
+import entity.CsMoneyItem;
+import entity.ItemInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import services.IService;
@@ -16,26 +16,24 @@ import java.net.http.HttpResponse;
 import java.util.List;
 
 @Component
-public class CsMarketService implements IService {
-    private CsMarketJsonParser csMarketJsonParse;
+public class CsMoneyService implements IService {
+    private CsMoneyJsonParser csMoneyJsonParser ;
     @Autowired
-    public CsMarketService(CsMarketJsonParser csMarketJsonParse) {
-        this.csMarketJsonParse = csMarketJsonParse;
+    public CsMoneyService(CsMoneyJsonParser csMoneyJsonParser) {
+        this.csMoneyJsonParser = csMoneyJsonParser;
     }
-
-    public CsMarketItem searchByName(String name) throws InterruptedException, IOException {
+    @Override
+    public ItemInterface searchByName(String name) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         String encodedString = URLEncoder.encode(name, "UTF-8");
-        URI uri = URI.create("https://market.csgo.com/api/v2/search-item-by-hash-name?key="+ConfProperties.getProperty("csMarketApiKey")+"&hash_name="+encodedString);
+        URI uri = URI.create("https://cs.money/1.0/market/sell-orders?limit=1&name="+encodedString+"&order=asc&sort=price");
         HttpRequest request=HttpRequest
                 .newBuilder()
                 .uri(uri)
                 .GET()
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        List<CsMarketItem> csMarketItems = csMarketJsonParse.parseResponseToList(response.body());
-        return csMarketItems.get(0);
+        List<CsMoneyItem> csMoneyItems = csMoneyJsonParser.parseResponseToList(response.body());
+        return csMoneyItems.get(0);
     }
-
-
 }

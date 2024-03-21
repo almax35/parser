@@ -7,12 +7,12 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CsMarketJsonParse  {
+public class CsMarketJsonParser {
     public  CsMarketItem parseJsonObject(JSONObject object){
         String name=object.getString("market_hash_name");
         double price=object.getDouble("price");
         int count=object.getInt("count");
-        return new CsMarketItem(name, price, count);
+        return new CsMarketItem(name, price/100, count);
     }
 
     public List<CsMarketItem> parseResponseToList(String body){
