@@ -9,16 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="CsMarketService add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeXmlParser.java" afterDir="false" />
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="CsMoneyService add">
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeJsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CsMoneyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CsMoneyItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketJsonParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeXmlParser.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +196,8 @@
       <workItem from="1710632264792" duration="10263000" />
       <workItem from="1710710578304" duration="4137000" />
       <workItem from="1710773993870" duration="3716000" />
-      <workItem from="1711024624751" duration="17922000" />
+      <workItem from="1711024624751" duration="18011000" />
+      <workItem from="1711110129238" duration="3409000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -223,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710777727525</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CsMoneyService add">
+      <created>1711051685002</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711051685002</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +237,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="add config" />
     <MESSAGE value="CsMarketService add" />
-    <option name="LAST_COMMIT_MESSAGE" value="CsMarketService add" />
+    <MESSAGE value="CsMoneyService add" />
+    <option name="LAST_COMMIT_MESSAGE" value="CsMoneyService add" />
   </component>
 </project>
