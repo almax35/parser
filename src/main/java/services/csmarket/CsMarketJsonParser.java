@@ -3,11 +3,12 @@ package services.csmarket;
 import entity.CsMarketItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import services.IJsonParser;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CsMarketJsonParser {
+public class CsMarketJsonParser implements IJsonParser {
     public  CsMarketItem parseJsonObject(JSONObject object){
         String name=object.getString("market_hash_name");
         double price=object.getDouble("price");

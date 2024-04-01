@@ -36,4 +36,7 @@ public class CsMoneyService implements IService {
         List<CsMoneyItem> csMoneyItems = csMoneyJsonParser.parseResponseToList(response.body());
         return csMoneyItems.get(0);
     }
+    public List<ItemInterface> searchWithParams(double minPrice,double maxPrice, int type){
+        return null;
+    }
 }

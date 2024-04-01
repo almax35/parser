@@ -2,6 +2,7 @@ package services.buff;
 
 import config.ConfProperties;
 import entity.BuffItem;
+import entity.ItemCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import services.IService;
@@ -18,9 +19,11 @@ import java.util.List;
 public class BuffService implements IService {
 
     private  BuffJsonParser buffJsonParser;
+    private ItemCategory category;
     @Autowired
-    public BuffService(BuffJsonParser buffJsonParser) {
+    public BuffService(BuffJsonParser buffJsonParser, ItemCategory category) {
         this.buffJsonParser = buffJsonParser;
+        this.category = category;
     }
 
     public BuffItem searchByName(String name) throws InterruptedException, IOException {
@@ -37,4 +40,36 @@ public class BuffService implements IService {
         List<BuffItem> buffItems = buffJsonParser.parseResponseToList(response.body());
         return buffItems.get(0);
     }
+    public List<BuffItem> searchWithType(String type) throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        if (category.getCategoryType().contains(type)){
+            HttpRequest request=HttpRequest
+                    .newBuilder()
+                    .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
+                    .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&category_group="+type))
+                    .GET()
+                    .build();
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            return buffJsonParser.parseResponseToList(response.body());
+        }
+        else {
+            if (category.getCategoryWeapon().contains(type)) {
+                HttpRequest request = HttpRequest
+                        .newBuilder()
+                        .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
+                        .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&category=" + type))
+                        .GET()
+                        .build();
+                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                return buffJsonParser.parseResponseToList(response.body());
+            }
+            else {
+                return null;
+            }
+        }
+    }
+    public List<BuffItem> searchWithPrice(double minPrice, double maxPrice){
+        return null;
+    }
+
 }

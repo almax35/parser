@@ -1,5 +1,18 @@
 <html>
+<head>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
 <body>
-<h2>Hello World!</h2>
+<div class="center">
+    <button onclick="">Моя кнопка</button>
+</div>
 </body>
 </html>

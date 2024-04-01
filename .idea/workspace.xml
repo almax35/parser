@@ -9,12 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="CsMoneyService add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeJsonParser.java" afterDir="false" />
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add ExchangeService">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/ItemCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/IJsonParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/MainService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeXmlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/buff/BuffJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/UriCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +66,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -69,7 +79,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a553815dc72231f7b3203bdad4ec66ab&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -197,7 +207,9 @@
       <workItem from="1710710578304" duration="4137000" />
       <workItem from="1710773993870" duration="3716000" />
       <workItem from="1711024624751" duration="18011000" />
-      <workItem from="1711110129238" duration="3409000" />
+      <workItem from="1711110129238" duration="6335000" />
+      <workItem from="1711561070178" duration="3832000" />
+      <workItem from="1711975529378" duration="11398000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -227,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711051685002</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add ExchangeService">
+      <created>1711122649223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711122649224</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +257,7 @@
     <MESSAGE value="add config" />
     <MESSAGE value="CsMarketService add" />
     <MESSAGE value="CsMoneyService add" />
-    <option name="LAST_COMMIT_MESSAGE" value="CsMoneyService add" />
+    <MESSAGE value="add ExchangeService" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ExchangeService" />
   </component>
 </project>

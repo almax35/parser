@@ -4,11 +4,12 @@ import entity.BuffItem;
 import entity.CsMoneyItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import services.IJsonParser;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CsMoneyJsonParser {
+public class CsMoneyJsonParser implements IJsonParser {
     public  CsMoneyItem parseJsonCsMoney(JSONObject object) {
         String name= object.getJSONObject("asset").getJSONObject("names").getString("full");
         double price=object.getJSONObject("pricing").getDouble("computed");

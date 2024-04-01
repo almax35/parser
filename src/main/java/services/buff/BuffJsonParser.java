@@ -4,12 +4,13 @@ import entity.BuffItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
+import services.IJsonParser;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class BuffJsonParser  {
+public class BuffJsonParser implements IJsonParser {
     public BuffJsonParser() {
     }
 
