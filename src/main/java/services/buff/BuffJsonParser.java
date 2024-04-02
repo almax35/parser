@@ -28,7 +28,6 @@ public class BuffJsonParser implements IJsonParser {
     public List<BuffItem> parseResponseToList(String body){
         ArrayList<BuffItem> list=new ArrayList<>();
         JSONObject object=new JSONObject(body);
-        System.out.println(body);
         JSONObject data= object.getJSONObject("data");
         JSONArray items =data.getJSONArray("items");
         for (int i=0; i<items.length(); i++){

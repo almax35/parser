@@ -46,7 +46,7 @@ public class BuffService implements IService {
             HttpRequest request=HttpRequest
                     .newBuilder()
                     .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
-                    .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&category_group="+type))
+                    .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80&category_group="+type))
                     .GET()
                     .build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
@@ -57,7 +57,7 @@ public class BuffService implements IService {
                 HttpRequest request = HttpRequest
                         .newBuilder()
                         .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
-                        .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&category=" + type))
+                        .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80&category=" + type))
                         .GET()
                         .build();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
@@ -68,8 +68,60 @@ public class BuffService implements IService {
             }
         }
     }
-    public List<BuffItem> searchWithPrice(double minPrice, double maxPrice){
-        return null;
+    public List<BuffItem> searchWithMinPrice(double minPrice) throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request=HttpRequest
+                    .newBuilder()
+                    .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
+                    .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80&min_price="+minPrice))
+                    .GET()
+                    .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        return buffJsonParser.parseResponseToList(response.body());
+    }
+    public List<BuffItem> searchWithMaxPrice(double maxPrice) throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request=HttpRequest
+                .newBuilder()
+                .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
+                .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80&max_price="+maxPrice))
+                .GET()
+                .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        return buffJsonParser.parseResponseToList(response.body());
+    }
+    public List<BuffItem> searchWithMinAndMaxPrice(double minPrice, double maxPrice) throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request=HttpRequest
+                .newBuilder()
+                .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
+                .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80&min_price="+minPrice+"&max_price="+maxPrice))
+                .GET()
+                .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        return buffJsonParser.parseResponseToList(response.body());
+    }
+    public List<BuffItem> searchWithoutParams() throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request=HttpRequest
+                .newBuilder()
+                .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
+                .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80"))
+                .GET()
+                .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        return buffJsonParser.parseResponseToList(response.body());
+    }
+    public List<BuffItem> searchWithoutAllParams() throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request=HttpRequest
+                .newBuilder()
+                .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
+                .uri(URI.create("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80"))
+                .GET()
+                .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        return buffJsonParser.parseResponseToList(response.body());
     }
 
 }

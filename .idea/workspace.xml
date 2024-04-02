@@ -9,19 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add ExchangeService">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/ItemCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/IJsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/MainService.java" afterDir="false" />
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add search with type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/ItemCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/buff/BuffJsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/UriCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/property.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +203,8 @@
       <workItem from="1711024624751" duration="18011000" />
       <workItem from="1711110129238" duration="6335000" />
       <workItem from="1711561070178" duration="3832000" />
-      <workItem from="1711975529378" duration="11398000" />
+      <workItem from="1711975529378" duration="11751000" />
+      <workItem from="1712059771402" duration="5563000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -246,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711122649224</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add search with type">
+      <created>1711997938221</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711997938221</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +260,7 @@
     <MESSAGE value="CsMarketService add" />
     <MESSAGE value="CsMoneyService add" />
     <MESSAGE value="add ExchangeService" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ExchangeService" />
+    <MESSAGE value="add search with type" />
+    <option name="LAST_COMMIT_MESSAGE" value="add search with type" />
   </component>
 </project>

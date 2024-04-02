@@ -11,6 +11,8 @@ public class ItemCategory {
     private ArrayList<String> categoryType;
 
     public ItemCategory() {
+        categoryWeapon=new ArrayList<>();
+        categoryType=new ArrayList<>();
         Collections.addAll(categoryWeapon, "weapon_ak47",
                 "weapon_m4a1_silencer",
                 "weapon_aug",
