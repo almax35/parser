@@ -9,13 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add search with type">
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add search price">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/TableString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/ItemCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/buff/BuffJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MainService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/property.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +205,8 @@
       <workItem from="1711110129238" duration="6335000" />
       <workItem from="1711561070178" duration="3832000" />
       <workItem from="1711975529378" duration="11751000" />
-      <workItem from="1712059771402" duration="5563000" />
+      <workItem from="1712059771402" duration="5620000" />
+      <workItem from="1712324662087" duration="6703000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -248,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711997938221</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add search price">
+      <created>1712074468482</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712074468483</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +270,7 @@
     <MESSAGE value="CsMoneyService add" />
     <MESSAGE value="add ExchangeService" />
     <MESSAGE value="add search with type" />
-    <option name="LAST_COMMIT_MESSAGE" value="add search with type" />
+    <MESSAGE value="add search price" />
+    <option name="LAST_COMMIT_MESSAGE" value="add search price" />
   </component>
 </project>

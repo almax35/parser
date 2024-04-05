@@ -23,7 +23,7 @@ public class CsMoneyService implements IService {
         this.csMoneyJsonParser = csMoneyJsonParser;
     }
     @Override
-    public ItemInterface searchByName(String name) throws IOException, InterruptedException {
+    public CsMoneyItem searchByName(String name) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         String encodedString = URLEncoder.encode(name, "UTF-8");
         URI uri = URI.create("https://cs.money/1.0/market/sell-orders?limit=1&name="+encodedString+"&order=asc&sort=price");
@@ -36,7 +36,5 @@ public class CsMoneyService implements IService {
         List<CsMoneyItem> csMoneyItems = csMoneyJsonParser.parseResponseToList(response.body());
         return csMoneyItems.get(0);
     }
-    public List<ItemInterface> searchWithParams(double minPrice,double maxPrice, int type){
-        return null;
-    }
+
 }

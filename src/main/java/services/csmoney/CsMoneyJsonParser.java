@@ -19,7 +19,6 @@ public class CsMoneyJsonParser implements IJsonParser {
     public List<CsMoneyItem> parseResponseToList(String body){
         ArrayList<CsMoneyItem> list=new ArrayList<>();
         JSONObject object=new JSONObject(body);
-        System.out.println(body);
         JSONArray items =object.getJSONArray("items");
         for (int i=0; i<items.length(); i++){
             JSONObject item=items.getJSONObject(i);
