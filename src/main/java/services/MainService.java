@@ -42,7 +42,8 @@ public class MainService {
        List<TableString> tableStrings=new ArrayList<>();
        for (BuffItem buffItem: buffItems){
            String name=buffItem.getName();
-           tableStrings.add(new TableString(buffItem.getName(), buffItem.getBuffPrice(), buffItem.getSteamPrice(),csMarketService.searchByName(name).getPrice(), csMoneyService.searchByName(name).getPrice(), buffItem.getSteamHref(), buffItem.getImageHref()));
+           TableString tableString=new TableString(buffItem.getName(), buffItem.getBuffPrice(), buffItem.getSteamPrice(),csMarketService.searchByName(name).getPrice(), csMoneyService.searchByName(name).getPrice(), buffItem.getSteamHref(), buffItem.getImageHref());
+           tableStrings.add(tableString);
            Thread.sleep(210);
        }
        return tableStrings;

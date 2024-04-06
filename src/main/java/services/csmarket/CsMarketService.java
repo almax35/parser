@@ -2,6 +2,7 @@ package services.csmarket;
 
 import config.ConfProperties;
 import entity.CsMarketItem;
+import entity.CsMoneyItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import services.IService;
@@ -34,8 +35,9 @@ public class CsMarketService implements IService {
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         List<CsMarketItem> csMarketItems = csMarketJsonParse.parseResponseToList(response.body());
+        if(csMarketItems.isEmpty()){
+            return new CsMarketItem(name,0,0);
+        }
         return csMarketItems.get(0);
     }
-
-
 }

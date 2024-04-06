@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add search price">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/TableString.java" afterDir="false" />
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add MainServiceSearcher">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" afterDir="false" />
     </list>
@@ -206,7 +205,8 @@
       <workItem from="1711561070178" duration="3832000" />
       <workItem from="1711975529378" duration="11751000" />
       <workItem from="1712059771402" duration="5620000" />
-      <workItem from="1712324662087" duration="6703000" />
+      <workItem from="1712324662087" duration="6754000" />
+      <workItem from="1712357494829" duration="3617000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712074468483</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add MainServiceSearcher">
+      <created>1712340478038</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712340478038</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +278,7 @@
     <MESSAGE value="add ExchangeService" />
     <MESSAGE value="add search with type" />
     <MESSAGE value="add search price" />
-    <option name="LAST_COMMIT_MESSAGE" value="add search price" />
+    <MESSAGE value="add MainServiceSearcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MainServiceSearcher" />
   </component>
 </project>
