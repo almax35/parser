@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import services.buff.BuffService;
 import services.csmarket.CsMarketService;
 import services.csmoney.CsMoneyService;
+import services.exchange.ExchangeService;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -17,12 +18,15 @@ public class MainService {
    private BuffService buffService;
    private CsMoneyService csMoneyService;
    private CsMarketService csMarketService;
+   private ExchangeService exchangeService;
+
 
    @Autowired
-   public MainService(BuffService buffService, CsMoneyService csMoneyService, CsMarketService csMarketService) {
+   public MainService(BuffService buffService, CsMoneyService csMoneyService, CsMarketService csMarketService, ExchangeService exchangeService) {
         this.buffService = buffService;
         this.csMoneyService = csMoneyService;
         this.csMarketService = csMarketService;
+        this.exchangeService=exchangeService;
     }
     public TableString searchWithName(String name) throws IOException, InterruptedException {
        TableString tableString=new TableString();

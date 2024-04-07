@@ -9,13 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add MainServiceSearcher">
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="fix bugs">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +24,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -206,7 +205,9 @@
       <workItem from="1711975529378" duration="11751000" />
       <workItem from="1712059771402" duration="5620000" />
       <workItem from="1712324662087" duration="6754000" />
-      <workItem from="1712357494829" duration="3617000" />
+      <workItem from="1712357494829" duration="5542000" />
+      <workItem from="1712496085746" duration="1646000" />
+      <workItem from="1712498453333" duration="6235000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -264,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712340478038</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix bugs">
+      <created>1712447338589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712447338589</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +287,7 @@
     <MESSAGE value="add search with type" />
     <MESSAGE value="add search price" />
     <MESSAGE value="add MainServiceSearcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="add MainServiceSearcher" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
 </project>
