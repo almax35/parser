@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="fix bugs">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" afterDir="false" />
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add main page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Tomcat Server.9">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TableParser" />
@@ -207,7 +206,8 @@
       <workItem from="1712324662087" duration="6754000" />
       <workItem from="1712357494829" duration="5542000" />
       <workItem from="1712496085746" duration="1646000" />
-      <workItem from="1712498453333" duration="6235000" />
+      <workItem from="1712498453333" duration="6281000" />
+      <workItem from="1712583005166" duration="4718000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -272,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712447338589</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add main page">
+      <created>1712515899078</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712515899078</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +295,7 @@
     <MESSAGE value="add search price" />
     <MESSAGE value="add MainServiceSearcher" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="add main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add main page" />
   </component>
 </project>

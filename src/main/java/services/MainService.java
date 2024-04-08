@@ -28,7 +28,8 @@ public class MainService {
         this.csMarketService = csMarketService;
         this.exchangeService=exchangeService;
     }
-    public TableString searchWithName(String name) throws IOException, InterruptedException {
+    public List<TableString> searchWithName(String name) throws IOException, InterruptedException {
+       List<TableString> tableStrings=new ArrayList<>();
        TableString tableString=new TableString();
        BuffItem buffItem=buffService.searchByName(name);
        tableString.setName(buffItem.getName());
@@ -38,7 +39,8 @@ public class MainService {
        tableString.setImageHref(buffItem.getImageHref());
        tableString.setCsMarketPrice(csMarketService.searchByName(name).getPrice());
        tableString.setCsMoneyPrice(csMoneyService.searchByName(name).getPrice());
-       return tableString;
+       tableStrings.add(tableString);
+       return tableStrings;
     }
 
     public List<TableString> searchWithParams(double minPrice, double maxPrice,String type) throws IOException, InterruptedException {
