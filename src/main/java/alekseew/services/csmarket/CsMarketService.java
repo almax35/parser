@@ -1,11 +1,10 @@
-package services.csmarket;
+package alekseew.services.csmarket;
 
-import config.ConfProperties;
-import entity.CsMarketItem;
-import entity.CsMoneyItem;
+import alekseew.config.ConfProperties;
+import alekseew.entity.CsMarketItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import services.IService;
+import alekseew.services.IService;
 
 
 import java.io.IOException;

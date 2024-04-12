@@ -1,13 +1,13 @@
-package services;
+package alekseew.services;
 
-import entity.BuffItem;
-import entity.TableString;
+import alekseew.entity.BuffItem;
+import alekseew.entity.TableString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import services.buff.BuffService;
-import services.csmarket.CsMarketService;
-import services.csmoney.CsMoneyService;
-import services.exchange.ExchangeService;
+import alekseew.services.buff.BuffService;
+import alekseew.services.csmarket.CsMarketService;
+import alekseew.services.csmoney.CsMoneyService;
+import alekseew.services.exchange.ExchangeService;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -45,6 +45,7 @@ public class MainService {
 
     public List<TableString> searchWithParams(double minPrice, double maxPrice,String type) throws IOException, InterruptedException {
        List<BuffItem> buffItems = buffService.searchWithParams(minPrice,maxPrice,type);
+        System.out.println(buffItems);
        List<TableString> tableStrings=new ArrayList<>();
        for (BuffItem buffItem: buffItems){
            String name=buffItem.getName();

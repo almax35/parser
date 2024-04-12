@@ -1,10 +1,10 @@
-package services.buff;
+package alekseew.services.buff;
 
-import entity.BuffItem;
+import alekseew.entity.BuffItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
-import services.IJsonParser;
+import alekseew.services.IJsonParser;
 
 import java.util.ArrayList;
 import java.util.List;

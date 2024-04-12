@@ -1,7 +1,7 @@
-package services;
+package alekseew.services;
 
-import entity.BuffItem;
-import entity.ItemInterface;
+import alekseew.entity.BuffItem;
+import alekseew.entity.ItemInterface;
 
 import java.io.IOException;
 

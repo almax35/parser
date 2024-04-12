@@ -1,10 +1,10 @@
-package services.csmoney;
+package alekseew.services.csmoney;
 
-import entity.CsMoneyItem;
-import entity.ItemInterface;
+import alekseew.entity.CsMoneyItem;
+import alekseew.entity.ItemInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import services.IService;
+import alekseew.services.IService;
 
 
 import java.io.IOException;

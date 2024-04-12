@@ -1,17 +1,15 @@
-package services.exchange;
+package alekseew.services.exchange;
 
-import config.ConfProperties;
-import entity.CsMarketItem;
+import alekseew.config.ConfProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URI;
-import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.List;
+
 @Component
 public class ExchangeService {
     private ExchangeJsonParser exchangeJsonParser;

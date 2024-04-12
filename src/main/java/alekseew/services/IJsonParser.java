@@ -1,4 +1,4 @@
-package services;
+package alekseew.services;
 
 public interface IJsonParser {
 }

@@ -1,4 +1,4 @@
-package entity;
+package alekseew.entity;
 
 import org.springframework.stereotype.Component;
 
@@ -12,7 +12,16 @@ public class TableString {
     private String steamHref;
     private String imageHref;
 
-    public TableString(String name, double buffPrice, double steamPrice, double csMarketPrice, double csMoneyPrice,  String steamHref, String imageHref) {
+    public TableString(String name, double buffPrice, double steamPrice, double csMarketPrice, double csMoneyPrice, String imageHref) {
+        this.name = name;
+        this.buffPrice = buffPrice;
+        this.steamPrice = steamPrice;
+        this.csMarketPrice = csMarketPrice;
+        this.csMoneyPrice = csMoneyPrice;
+        this.imageHref = imageHref;
+    }
+
+    public TableString(String name, double buffPrice, double steamPrice, double csMarketPrice, double csMoneyPrice, String steamHref, String imageHref) {
         this.name = name;
         this.buffPrice = buffPrice;
         this.steamPrice = steamPrice;
@@ -80,6 +89,7 @@ public class TableString {
     public void setImageHref(String imageHref) {
         this.imageHref = imageHref;
     }
+
 
     @Override
     public String toString() {

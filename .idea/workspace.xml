@@ -9,10 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="add main page">
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="connection front and back">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/config/ConfProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/MySpringMvcDispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/BuffItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/BuffItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CsMarketItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/CsMarketItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CsMoneyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/CsMoneyItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/ItemCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/ItemInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/ItemInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/TableString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/TableString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/IJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/IJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmarket/CsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/exchange/ExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/property.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +58,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -69,7 +91,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a553815dc72231f7b3203bdad4ec66ab&quot;,
@@ -78,11 +100,17 @@
 }</component>
   <component name="RunManager" selected="Tomcat Server.9">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="alekseew.Main" />
       <module name="TableParser" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -173,11 +201,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="HTTP Request.generated-requests | #4" />
+      <item itemvalue="HTTP Request.generated-requests | #5" />
       <item itemvalue="Tomcat Server.9" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +239,12 @@
       <workItem from="1712357494829" duration="5542000" />
       <workItem from="1712496085746" duration="1646000" />
       <workItem from="1712498453333" duration="6281000" />
-      <workItem from="1712583005166" duration="4718000" />
+      <workItem from="1712583005166" duration="5358000" />
+      <workItem from="1712840352279" duration="3625000" />
+      <workItem from="1712844182685" duration="7532000" />
+      <workItem from="1712856995785" duration="1694000" />
+      <workItem from="1712860596073" duration="1193000" />
+      <workItem from="1712880245186" duration="3015000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -279,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712515899078</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="connection front and back">
+      <created>1712587787961</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712587787961</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +340,7 @@
     <MESSAGE value="add MainServiceSearcher" />
     <MESSAGE value="fix bugs" />
     <MESSAGE value="add main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add main page" />
+    <MESSAGE value="connection front and back" />
+    <option name="LAST_COMMIT_MESSAGE" value="connection front and back" />
   </component>
 </project>

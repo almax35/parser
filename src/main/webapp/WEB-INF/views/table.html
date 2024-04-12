@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,12 +118,13 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="str : ${result}">
-            <td><span th:text="${str.getName()}"> Название </span></td>
-            <td><span th:text="${str.getImageHref()}"> Изображение </span></td>
-            <td><span th:text="${str.getBuffPrice()}"> Buff price </span></td>
-            <td><span th:text="${str.getCsMoneyPrice()}"> CsMoney price </span></td>
-            <td><span th:text="${str.getCsMarketPrice()}"> CsMarket price </span></td>
+        <tbody>
+        <tr th:each="str : ${results}">
+            <td><span th:text="${str.name}"> Название </span></td>
+            <td><span th:text="${str.imageHref}"> Изображение </span></td>
+            <td><span th:text="${str.buffPrice}"> Buff price </span></td>
+            <td><span th:text="${str.csMoneyPrice}"> CsMoney price </span></td>
+            <td><span th:text="${str.csMarketPrice}"> CsMarket price </span></td>
         </tr>
         </tbody>
     </table>

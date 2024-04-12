@@ -1,4 +1,4 @@
-package config;
+package alekseew.config;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class ConfProperties {
 
     static {
         try {
-            fileInputStream = new FileInputStream("src\\main\\resources\\property.properties");
+            fileInputStream = new FileInputStream("C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\main\\resources\\property.properties");
             PROPERTIES = new Properties();
             PROPERTIES.load(fileInputStream);
         } catch (IOException e) {

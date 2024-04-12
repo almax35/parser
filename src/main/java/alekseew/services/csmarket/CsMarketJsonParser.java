@@ -1,13 +1,15 @@
-package services.csmarket;
+package alekseew.services.csmarket;
 
-import entity.CsMarketItem;
+import alekseew.entity.CsMarketItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import services.IJsonParser;
+import alekseew.services.IJsonParser;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CsMarketJsonParser implements IJsonParser {
     public  CsMarketItem parseJsonObject(JSONObject object){
         String name=object.getString("market_hash_name");

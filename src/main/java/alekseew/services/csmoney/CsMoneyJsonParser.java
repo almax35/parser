@@ -1,14 +1,16 @@
-package services.csmoney;
+package alekseew.services.csmoney;
 
-import entity.BuffItem;
-import entity.CsMoneyItem;
+import alekseew.entity.BuffItem;
+import alekseew.entity.CsMoneyItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import services.IJsonParser;
+import alekseew.services.IJsonParser;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CsMoneyJsonParser implements IJsonParser {
     public  CsMoneyItem parseJsonCsMoney(JSONObject object) {
         String name= object.getJSONObject("asset").getJSONObject("names").getString("full");

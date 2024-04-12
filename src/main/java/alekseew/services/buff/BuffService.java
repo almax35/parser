@@ -1,11 +1,11 @@
-package services.buff;
+package alekseew.services.buff;
 
-import config.ConfProperties;
-import entity.BuffItem;
-import entity.ItemCategory;
+import alekseew.config.ConfProperties;
+import alekseew.entity.BuffItem;
+import alekseew.entity.ItemCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import services.IService;
+import alekseew.services.IService;
 
 import java.io.IOException;
 import java.net.URI;
@@ -42,7 +42,7 @@ public class BuffService implements IService {
     }
 
     public List<BuffItem> searchWithParams(double minPrice, double maxPrice, String type) throws IOException, InterruptedException {
-        StringBuilder uri=new StringBuilder("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=80");
+        StringBuilder uri=new StringBuilder("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=10");
         if (minPrice!=-1d){
             uri.append("&min_price=").append(minPrice);
         }

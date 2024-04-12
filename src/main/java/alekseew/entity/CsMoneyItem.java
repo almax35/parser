@@ -1,4 +1,4 @@
-package entity;
+package alekseew.entity;
 
 public class CsMoneyItem implements ItemInterface{
     private String name;

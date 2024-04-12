@@ -1,8 +1,8 @@
-package services.exchange;
+package alekseew.services.exchange;
 
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
-import services.IJsonParser;
+import alekseew.services.IJsonParser;
 
 @Component
 public class ExchangeJsonParser implements IJsonParser {
