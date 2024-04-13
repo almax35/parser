@@ -9,6 +9,8 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class ExchangeService {
@@ -18,7 +20,7 @@ public class ExchangeService {
         this.exchangeJsonParser = exchangeJsonParser;
     }
 
-    public void saveValuteCourse() throws InterruptedException, IOException {
+    public List<Double> saveValuteCourse() throws InterruptedException, IOException {
         HttpClient client = HttpClient.newHttpClient();
         URI uri = URI.create("https://www.cbr-xml-daily.ru/daily_json.js");
         HttpRequest request=HttpRequest
@@ -27,7 +29,9 @@ public class ExchangeService {
                 .GET()
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        System.out.println(exchangeJsonParser.getCnyToRub(response.body()));
-        System.out.println(exchangeJsonParser.getUsdToRub(response.body()));
+        ArrayList<Double> course=new ArrayList<>();
+        course.add(exchangeJsonParser.getUsdToRub(response.body()));
+        course.add(exchangeJsonParser.getCnyToRub(response.body()));
+        return course;
     }
 }

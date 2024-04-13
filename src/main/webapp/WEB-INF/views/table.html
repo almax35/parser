@@ -113,6 +113,7 @@
             <th>Название</th>
             <th>Изображение</th>
             <th>Buff</th>
+            <th>Steam</th>
             <th>CsMoney</th>
             <th>CsMarket</th>
         </tr>
@@ -121,8 +122,9 @@
         <tbody>
         <tr th:each="str : ${results}">
             <td><span th:text="${str.name}"> Название </span></td>
-            <td><span th:text="${str.imageHref}"> Изображение </span></td>
+            <td><img th:src="@{${str.imageHref}}" width="200" height="100"/></td>
             <td><span th:text="${str.buffPrice}"> Buff price </span></td>
+            <td><span th:text="${str.steamPrice}"> Steam price </span></td>
             <td><span th:text="${str.csMoneyPrice}"> CsMoney price </span></td>
             <td><span th:text="${str.csMarketPrice}"> CsMarket price </span></td>
         </tr>

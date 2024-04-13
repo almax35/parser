@@ -4,6 +4,7 @@ import alekseew.entity.TableString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import alekseew.services.MainService;
 
@@ -27,13 +28,13 @@ public class MainController {
     }
 
     @PostMapping("/table")
-    public String showTable(@RequestParam(required=false)  String name, @RequestParam(required=false)  double minPrice, @RequestParam(required=false)  double maxPrice, @RequestParam(required=false)  String type, Model model) throws IOException, InterruptedException {
-        System.out.println(name+" "+minPrice+" "+maxPrice+" "+type);
+    public String showTable(@Valid @ModelAttribute FormModel formModel, BindingResult bindingResult Model model) throws IOException, InterruptedException {
 
         if (name.equals("")){
             model.addAttribute("results", mainService.searchWithParams(minPrice,maxPrice,type));
         }
         else {
+            System.out.println(name);
             model.addAttribute("results", mainService.searchWithName(name));
         }
         return "/table";
