@@ -10,8 +10,8 @@ import alekseew.services.csmarket.CsMarketService;
 import alekseew.services.csmoney.CsMoneyService;
 
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Component
@@ -20,6 +20,7 @@ public class MainService {
    private CsMoneyService csMoneyService;
    private CsMarketService csMarketService;
    private ValuteCourse valuteCourse;
+   private List<TableString> strings;
 
 
 
@@ -34,6 +35,9 @@ public class MainService {
        List<TableString> tableStrings=new ArrayList<>();
        TableString tableString=new TableString();
        BuffItem buffItem=buffService.searchByName(name);
+       if (buffItem==null){
+           return null;
+       }
        double roundBuffPrice= Math.round( buffItem.getBuffPrice()* valuteCourse.getUah()* 100.0) / 100.0;
        double roundSteamPrice= Math.round( buffItem.getSteamPrice()* valuteCourse.getUah()* 100.0) / 100.0;
        double roundCsMoneyPrice= Math.round( csMoneyService.searchByName(name).getPrice()* valuteCourse.getUsd()* 100.0) / 100.0;
@@ -45,14 +49,17 @@ public class MainService {
        tableString.setCsMarketPrice(csMarketService.searchByName(name).getPrice());
        tableString.setCsMoneyPrice(roundCsMoneyPrice);
        tableStrings.add(tableString);
+       strings=tableStrings;
        return tableStrings;
     }
 
-    public List<TableString> searchWithParams(double minPrice, double maxPrice,String type) throws IOException, InterruptedException {
+    public List<TableString> searchWithParams(double minPrice, double maxPrice,int quantity,String type) throws IOException, InterruptedException {
         double minRubPrice = Math.round( minPrice/valuteCourse.getUah()* 100.0) / 100.0;
         double maxRubPrice= Math.round( maxPrice/valuteCourse.getUah()* 100.0) / 100.0;
-       List<BuffItem> buffItems = buffService.searchWithParams(minRubPrice,maxRubPrice,type);
-        System.out.println(buffItems);
+       List<BuffItem> buffItems = buffService.searchWithParams(minRubPrice,maxRubPrice,quantity,type);
+        if (buffItems==null){
+            return null;
+        }
        List<TableString> tableStrings=new ArrayList<>();
        for (BuffItem buffItem: buffItems){
            String name=buffItem.getName();
@@ -63,7 +70,27 @@ public class MainService {
            tableStrings.add(tableString);
            Thread.sleep(210);
        }
+       strings=tableStrings;
        return tableStrings;
     }
 
+    public void sortTable(String type){
+        switch (type){
+            case "Buff":
+                strings.sort(Comparator.comparing(TableString::getBuffPrice));
+                break;
+            case "Steam":
+                strings.sort(Comparator.comparing(TableString::getSteamPrice));
+                break;
+            case "CsMoney":
+                strings.sort(Comparator.comparing(TableString::getCsMoneyPrice));
+                break;
+            case "CsMarket":
+                strings.sort(Comparator.comparing(TableString::getCsMarketPrice));
+                break;
+        }
+    }
+    public  List<TableString> getStrings() {
+        return strings;
+    }
 }

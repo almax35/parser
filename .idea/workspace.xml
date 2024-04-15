@@ -9,13 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="change architecture and add visualisation of table">
-      <change afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/ValuteCourse.java" afterDir="false" />
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="integrate exchange service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/property.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/property.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,10 +77,18 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a553815dc72231f7b3203bdad4ec66ab&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Tomcat Server.9">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="alekseew.Main" />
@@ -225,7 +236,9 @@
       <workItem from="1712856995785" duration="1694000" />
       <workItem from="1712860596073" duration="1193000" />
       <workItem from="1712880245186" duration="3223000" />
-      <workItem from="1712966978870" duration="5124000" />
+      <workItem from="1712966978870" duration="5256000" />
+      <workItem from="1713045202500" duration="11273000" />
+      <workItem from="1713184142005" duration="15318000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -311,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712883478991</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="integrate exchange service">
+      <created>1712972262591</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712972262591</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +350,7 @@
     <MESSAGE value="add main page" />
     <MESSAGE value="connection front and back" />
     <MESSAGE value="change architecture and add visualisation of table" />
-    <option name="LAST_COMMIT_MESSAGE" value="change architecture and add visualisation of table" />
+    <MESSAGE value="integrate exchange service" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrate exchange service" />
   </component>
 </project>

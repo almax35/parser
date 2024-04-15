@@ -11,6 +11,10 @@
             margin: 0;
             padding: 0;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
         .container {
             margin: 50px auto;
@@ -21,7 +25,7 @@
         }
 
         input[type="text"], select, input[type="number"] {
-            width: 100%;
+            width: 500px;
             padding: 10px;
             margin: 5px 0;
             border: 1px solid #ccc;
@@ -29,12 +33,16 @@
         }
 
         input[type="submit"] {
+            width: 150px;
             padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+        }
+        input[type="range"] {
+            width: 200px;
         }
 
         table {
@@ -51,15 +59,38 @@
             padding: 10px;
             text-align: left;
         }
+        #sortForm {
+            position: absolute;
+            right: 0;
+        }
+        #selectSort {
+            width: 200px;
+            margin-right: 50px;
+        }
+        #buttonSort{
+            width: 200px;
+            margin-right: 50px;
+            margin-left: auto;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
 <div class="container">
 <form action="/table" method="post">
     <h2>Поиск предмета</h2>
-    <input name="name" type="text" placeholder="Название предмета">
-    <input name="minPrice" type="number" placeholder="Минимальная цена">
-    <input name="maxPrice" type="number" placeholder="Максимальная цена">
+    <label for="name">Название:</label>
+    <input name="name" type="text" placeholder="Название предмета" id="name">
+    <label for="min">Минимальная цена:</label>
+    <input name="minPrice" type="number" placeholder="Минимальная цена" value="0" id="min">
+    <label for="max">Максимальная цена:</label>
+    <input name="maxPrice" type="number" placeholder="Максимальная цена" value="0" id="max">
+    <label for="quantity">Кол-во записей:</label>
+    <br>
+    <input type="range" id="quantity" name="quantity" min="1" max="80" step="1"  oninput="updateValue(this.value)">
+    <span id="rangeValue">40</span>
+    <br>
     <label for="selectInput">Тип предмета:</label>
     <select name="type" id="selectInput">
         <option value="weapon_ak47">ak-47</option>
@@ -106,7 +137,23 @@
     </select>
     <input type="submit" value="Поиск">
 </form>
-
+    <br>
+    <br>
+    <form action="/sort" method="post" id="sortForm">
+        <label for="selectSort">Тип сортировки:</label>
+            <select name="typeSort" id="selectSort">
+                <option value="Buff"> Buff </option>
+                <option value="Steam"> Steam </option>
+                <option value="CsMoney"> CsMoney </option>
+                <option value="CsMarket"> CsMarket </option>
+            </select>
+        <input type="submit" value="Сортировать" id="buttonSort">
+   </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <table>
         <thead>
         <tr>
@@ -120,9 +167,12 @@
         </thead>
         <tbody>
         <tbody>
+        <tr th:if="${results==null}">
+        <td colspan="6" th:text="${message}"> </td>
+        </tr>
         <tr th:each="str : ${results}">
             <td><span th:text="${str.name}"> Название </span></td>
-            <td><img th:src="@{${str.imageHref}}" width="200" height="100"/></td>
+            <td><img th:src="@{${str.imageHref}}" width="200" height="100" alt=""/></td>
             <td><span th:text="${str.buffPrice}"> Buff price </span></td>
             <td><span th:text="${str.steamPrice}"> Steam price </span></td>
             <td><span th:text="${str.csMoneyPrice}"> CsMoney price </span></td>
@@ -131,5 +181,11 @@
         </tbody>
     </table>
 </div>
+<script>
+    function updateValue(newValue) {
+        let rangeValueElement = document.getElementById("rangeValue");
+        rangeValueElement.innerHTML = newValue;
+    }
+</script>
 </body>
 </html>

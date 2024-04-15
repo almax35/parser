@@ -38,11 +38,18 @@ public class BuffService implements IService {
                 .build();
         HttpResponse<String> response = client.send(request1, HttpResponse.BodyHandlers.ofString());
         List<BuffItem> buffItems = buffJsonParser.parseResponseToList(response.body());
+        if (buffItems.isEmpty()){
+            return null;
+        }
         return buffItems.get(0);
     }
 
-    public List<BuffItem> searchWithParams(double minPrice, double maxPrice, String type) throws IOException, InterruptedException {
-        StringBuilder uri=new StringBuilder("https://buff.163.com/api/market/goods?game=csgo&page_num=1&page_size=10");
+    public List<BuffItem> searchWithParams(double minPrice, double maxPrice,int quantity, String type) throws IOException, InterruptedException {
+        StringBuilder uri=new StringBuilder("https://buff.163.com/api/market/goods?game=csgo&page_num=1");
+        uri.append("&page_size=").append(quantity);
+        if (minPrice>=maxPrice || minPrice<0){
+            return null;
+        }
         if (minPrice!=-1d){
             uri.append("&min_price=").append(minPrice);
         }
@@ -55,6 +62,7 @@ public class BuffService implements IService {
         if (category.getCategoryType().contains(type)){
             uri.append("&category_group=").append(type);
         }
+        System.out.println(uri);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request=HttpRequest
                 .newBuilder()
