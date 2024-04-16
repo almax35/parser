@@ -7,8 +7,8 @@ import java.util.Collections;
 
 @Component
 public class ItemCategory {
-    private ArrayList<String> categoryWeapon;
-    private ArrayList<String> categoryType;
+    private final ArrayList<String> categoryWeapon;
+    private final ArrayList<String> categoryType;
 
     public ItemCategory() {
         categoryWeapon=new ArrayList<>();

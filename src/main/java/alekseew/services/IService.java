@@ -1,10 +1,8 @@
 package alekseew.services;
 
-import alekseew.entity.BuffItem;
 import alekseew.entity.ItemInterface;
-
 import java.io.IOException;
 
 public interface IService {
-    public ItemInterface searchByName(String name) throws IOException,InterruptedException;
+    ItemInterface searchByName(String name) throws IOException,InterruptedException;
 }

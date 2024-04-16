@@ -1,12 +1,11 @@
 package alekseew.entity;
 
 public class BuffItem implements ItemInterface{
-    private String name;
-    private double buffPrice;
-    private double steamPrice;
-    private int buffQuantity;
-    private String steamHref;
-    private String imageHref;
+    private final String name;
+    private final double buffPrice;
+    private final double steamPrice;
+    private final String steamHref;
+    private final String imageHref;
 
     public String getName() {
         return name;
@@ -18,10 +17,6 @@ public class BuffItem implements ItemInterface{
 
     public double getSteamPrice() {
         return steamPrice;
-    }
-
-    public int getBuffQuantity() {
-        return buffQuantity;
     }
 
     public String getSteamHref() {
@@ -38,17 +33,15 @@ public class BuffItem implements ItemInterface{
                 "name='" + name + '\'' +
                 ", buffPrice=" + buffPrice +
                 ", steamPrice=" + steamPrice +
-                ", buffQuantity=" + buffQuantity +
                 ", steamHref='" + steamHref + '\'' +
                 ", imageHref='" + imageHref + '\'' +
                 '}';
     }
 
-    public BuffItem(String name, double buffPrice, double steamPrice, int buffQuantity, String steamHref, String imageHref) {
+    public BuffItem(String name, double buffPrice, double steamPrice, String steamHref, String imageHref) {
         this.name = name;
         this.buffPrice = buffPrice;
         this.steamPrice = steamPrice;
-        this.buffQuantity = buffQuantity;
         this.steamHref = steamHref;
         this.imageHref = imageHref;
     }

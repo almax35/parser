@@ -1,12 +1,10 @@
 package alekseew.services.csmoney;
 
-import alekseew.entity.BuffItem;
 import alekseew.entity.CsMoneyItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import alekseew.services.IJsonParser;
 import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +28,5 @@ public class CsMoneyJsonParser implements IJsonParser {
             list.add(parseJsonCsMoney(item));
         }
         return list;
-
     }
 }

@@ -6,20 +6,19 @@ import alekseew.entity.ItemCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import alekseew.services.IService;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @Component
 public class BuffService implements IService {
-
-    private  BuffJsonParser buffJsonParser;
-    private ItemCategory category;
+    private final BuffJsonParser buffJsonParser;
+    private final ItemCategory category;
     @Autowired
     public BuffService(BuffJsonParser buffJsonParser, ItemCategory category) {
         this.buffJsonParser = buffJsonParser;
@@ -27,9 +26,8 @@ public class BuffService implements IService {
     }
 
     public BuffItem searchByName(String name) throws InterruptedException, IOException {
-
         HttpClient client = HttpClient.newHttpClient();
-        String encodedString = URLEncoder.encode(name, "UTF-8");
+        String encodedString = URLEncoder.encode(name, StandardCharsets.UTF_8);
         HttpRequest request1=HttpRequest
                 .newBuilder()
                 .setHeader("Cookie", ConfProperties.getProperty("cookieBuff"))
@@ -50,19 +48,14 @@ public class BuffService implements IService {
         if (minPrice>=maxPrice || minPrice<0){
             return null;
         }
-        if (minPrice!=-1d){
-            uri.append("&min_price=").append(minPrice);
-        }
-        if (maxPrice!=-1d){
-            uri.append("&max_price=").append(maxPrice);
-        }
+        uri.append("&min_price=").append(minPrice);
+        uri.append("&max_price=").append(maxPrice);
         if (category.getCategoryWeapon().contains(type)){
             uri.append("&category=").append(type);
         }
         if (category.getCategoryType().contains(type)){
             uri.append("&category_group=").append(type);
         }
-        System.out.println(uri);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request=HttpRequest
                 .newBuilder()

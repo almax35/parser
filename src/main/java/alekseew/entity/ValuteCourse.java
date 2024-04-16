@@ -6,8 +6,8 @@ import alekseew.services.exchange.ExchangeService;
 import java.io.IOException;
 
 public class ValuteCourse {
-    private double usd;
-    private double uah;
+    private final double usd;
+    private final double uah;
 
     public ValuteCourse() throws IOException, InterruptedException {
         ExchangeService service=new ExchangeService(new ExchangeJsonParser());

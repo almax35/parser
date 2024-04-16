@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import alekseew.services.buff.BuffService;
 import alekseew.services.csmarket.CsMarketService;
 import alekseew.services.csmoney.CsMoneyService;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -16,13 +15,11 @@ import java.util.List;
 
 @Component
 public class MainService {
-   private BuffService buffService;
-   private CsMoneyService csMoneyService;
-   private CsMarketService csMarketService;
-   private ValuteCourse valuteCourse;
+   private final BuffService buffService;
+   private final CsMoneyService csMoneyService;
+   private final CsMarketService csMarketService;
+   private final ValuteCourse valuteCourse;
    private List<TableString> strings;
-
-
 
    @Autowired
    public MainService(BuffService buffService, CsMoneyService csMoneyService, CsMarketService csMarketService) throws IOException, InterruptedException {
@@ -31,6 +28,7 @@ public class MainService {
         this.csMarketService = csMarketService;
         valuteCourse=new ValuteCourse();
     }
+
     public List<TableString> searchWithName(String name) throws IOException, InterruptedException {
        List<TableString> tableStrings=new ArrayList<>();
        TableString tableString=new TableString();

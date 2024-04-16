@@ -14,7 +14,7 @@ import java.util.List;
 
 @Component
 public class ExchangeService {
-    private ExchangeJsonParser exchangeJsonParser;
+    private final ExchangeJsonParser exchangeJsonParser;
     @Autowired
     public ExchangeService(ExchangeJsonParser exchangeJsonParser) {
         this.exchangeJsonParser = exchangeJsonParser;

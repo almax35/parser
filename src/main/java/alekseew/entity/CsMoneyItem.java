@@ -2,7 +2,7 @@ package alekseew.entity;
 
 public class CsMoneyItem implements ItemInterface{
     private String name;
-    private double price;
+    private final double price;
 
     public CsMoneyItem(String name, double price) {
         this.name = name;
@@ -27,9 +27,5 @@ public class CsMoneyItem implements ItemInterface{
 
     public double getPrice() {
         return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 }
