@@ -98,7 +98,7 @@
         <option value="weapon_m4a1">m4a1</option>
         <option value="weapon_awp">awp</option>
         <option value="weapon_deagle">deagle</option>
-        <option value="weapon_weaponcase">weaponcase</option>
+        <option value="csgo_type_weaponcase">weaponcase</option>
         <option value="type_customplayer">agent</option>
         <option value="weapon_galilar">galilar</option>
         <option value="weapon_aug">aug</option>
@@ -181,7 +181,9 @@
         </tr>
         </tbody>
     </table>
+    <p th:if="${maxPercentage.name!=null && results!=null}">Самая выгодная перепродажа <span th:text="${maxPercentage.name}"></span>: <span th:text="${maxPercentage.firstMarket}"></span> ---> <span th:text="${maxPercentage.secondMarket}"></span> с выгодой <span th:text="${maxPercentage.percent}"></span>%</p>
 </div>
+
 <script>
     function updateValue(newValue) {
         let rangeValueElement = document.getElementById("rangeValue");

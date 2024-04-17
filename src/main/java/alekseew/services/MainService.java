@@ -1,6 +1,7 @@
 package alekseew.services;
 
 import alekseew.entity.BuffItem;
+import alekseew.entity.Resale;
 import alekseew.entity.TableString;
 import alekseew.entity.ValuteCourse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -87,6 +88,17 @@ public class MainService {
                 strings.sort(Comparator.comparing(TableString::getCsMarketPrice));
                 break;
         }
+    }
+    public Resale findMaxPercentageAtAll(){
+       double maxPercentage=Double.MIN_VALUE;
+        Resale resale=new Resale();
+       for (TableString string: strings){
+           if (string.findMarketsWithMaxPercent().getPercent()>maxPercentage){
+               maxPercentage=string.findMarketsWithMaxPercent().getPercent();
+               resale=string.findMarketsWithMaxPercent();
+           }
+       }
+       return resale;
     }
     public  List<TableString> getStrings() {
         return strings;

@@ -1,5 +1,6 @@
 package alekseew.controller;
 
+import alekseew.entity.Resale;
 import alekseew.entity.TableString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,7 @@ public class MainController {
     @GetMapping("/table")
     public String initTable(Model model){
         model.addAttribute("results",new ArrayList<TableString>());
+        model.addAttribute("maxPercentage",new Resale());
         return "table";
     }
 
@@ -29,13 +31,14 @@ public class MainController {
         ArrayList<TableString> tableStrings;
         if (Objects.equals(name, "")){
             tableStrings = (ArrayList<TableString>) mainService.searchWithParams(minPrice, maxPrice, quantity, type);
+            model.addAttribute("maxPercentage",mainService.findMaxPercentageAtAll());
             if (tableStrings==null){
                 model.addAttribute("message","Не удалось найти предметы по заданным параметрам поиска");
             }
         }
         else {
             tableStrings = (ArrayList<TableString>) mainService.searchWithName(name);
-            System.out.println(tableStrings);
+            model.addAttribute("maxPercentage",mainService.findMaxPercentageAtAll());
             if (tableStrings==null){
                 model.addAttribute("message","Не удалось найти предмет с заданным названием");
             }

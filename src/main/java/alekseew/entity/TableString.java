@@ -103,4 +103,48 @@ public class TableString {
                 ", imageHref='" + imageHref + '\'' +
                 '}';
     }
+
+    public Resale findMarketsWithMaxPercent() {
+        return new Resale(getName(),(findMax()/findMin()-1)*100,findMarketWithPrice(findMin()),findMarketWithPrice(findMax()));
+    }
+
+    private double findMin() {
+        double min = Double.MAX_VALUE;
+        if (min>this.buffPrice && this.buffPrice!=0){
+            min=this.buffPrice;
+        }
+        if (min>this.steamPrice && this.steamPrice!=0){
+            min=this.steamPrice;
+        }
+        if (min>this.csMoneyPrice && this.csMoneyPrice!=0){
+            min=this.csMoneyPrice;
+        }
+        if (min>this.csMarketPrice && this.csMarketPrice!=0){
+            min=this.csMarketPrice;
+        }
+        return min;
+    }
+    private double findMax() {
+        double max = Double.MIN_VALUE;
+        max = Math.max(max, this.buffPrice);
+        max = Math.max(max, this.steamPrice);
+        max = Math.max(max, this.csMoneyPrice);
+        max = Math.max(max, this.csMarketPrice);
+        return max;
+    }
+    private String findMarketWithPrice(double price){
+        if (this.buffPrice==price){
+            return "Buff";
+        }
+        if (this.steamPrice==price){
+            return "Steam";
+        }
+        if (this.csMoneyPrice==price){
+            return "CsMoney";
+        }
+        if (this.csMarketPrice==price){
+            return "CsMarket";
+        }
+        return null;
+    }
 }
