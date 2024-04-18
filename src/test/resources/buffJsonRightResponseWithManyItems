@@ -1,0 +1,150 @@
+{
+  "code": "OK",
+  "data": {
+    "items": [
+      {
+        "appid": 730,
+        "bookmarked": false,
+        "buy_max_price": "27.7",
+        "buy_num": 612,
+        "can_bargain": true,
+        "can_search_by_tournament": false,
+        "description": null,
+        "game": "csgo",
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f58214edb3f8a06ca8b9f5f64PLNuk05",
+          "info": {
+            "tags": {
+              "category": {
+                "category": "category",
+                "id": 626,
+                "internal_name": "weapon_ak47",
+                "localized_name": "AK-47"
+              },
+              "exterior": {
+                "category": "exterior",
+                "id": 511,
+                "internal_name": "wearcategory1",
+                "localized_name": "Minimal\u00a0Wear"
+              },
+              "quality": {
+                "category": "quality",
+                "id": 516,
+                "internal_name": "normal",
+                "localized_name": "\u041e\u0431\u044b\u0447\u043d\u044b\u0439"
+              },
+              "rarity": {
+                "category": "rarity",
+                "id": 590,
+                "internal_name": "mythical_weapon",
+                "localized_name": "\u0417\u0430\u043f\u0440\u0435\u0449\u0451\u043d\u043d\u043e\u0435"
+              },
+              "type": {
+                "category": "type",
+                "id": 570,
+                "internal_name": "csgo_type_rifle",
+                "localized_name": "\u0412\u0438\u043d\u0442\u043e\u0432\u043a\u0430"
+              },
+              "weapon": {
+                "category": "weapon",
+                "id": 521,
+                "internal_name": "weapon_ak47",
+                "localized_name": "AK-47"
+              }
+            }
+          },
+          "item_id": null,
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f582135eb5a352d4eeb032wrCH3k1L05",
+          "steam_price": "5.14",
+          "steam_price_cny": "37.21"
+        },
+        "has_buff_price_history": true,
+        "id": 857534,
+        "market_hash_name": "AK-47 | Slate (Minimal Wear)",
+        "market_min_price": "0",
+        "name": "AK-47 | Slate (Minimal Wear)",
+        "quick_price": "27.6",
+        "sell_min_price": "27.6",
+        "sell_num": 12986,
+        "sell_reference_price": "27.7",
+        "short_name": "AK-47 | Slate (Minimal Wear)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Slate%20%28Minimal%20Wear%29",
+        "transacted_num": 0
+      },
+      {
+        "appid": 730,
+        "bookmarked": false,
+        "buy_max_price": "41",
+        "buy_num": 181,
+        "can_bargain": true,
+        "can_search_by_tournament": false,
+        "description": null,
+        "game": "csgo",
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f57b4a5af16f7910aba386r7GCHfGj05",
+          "info": {
+            "tags": {
+              "category": {
+                "category": "category",
+                "id": 626,
+                "internal_name": "weapon_ak47",
+                "localized_name": "AK-47"
+              },
+              "exterior": {
+                "category": "exterior",
+                "id": 511,
+                "internal_name": "wearcategory1",
+                "localized_name": "Minimal\u00a0Wear"
+              },
+              "quality": {
+                "category": "quality",
+                "id": 518,
+                "internal_name": "strange",
+                "localized_name": "StatTrak\u2122"
+              },
+              "rarity": {
+                "category": "rarity",
+                "id": 589,
+                "internal_name": "rare_weapon",
+                "localized_name": "\u0410\u0440\u043c\u0435\u0439\u0441\u043a\u043e\u0435 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u043e"
+              },
+              "type": {
+                "category": "type",
+                "id": 570,
+                "internal_name": "csgo_type_rifle",
+                "localized_name": "\u0412\u0438\u043d\u0442\u043e\u0432\u043a\u0430"
+              },
+              "weapon": {
+                "category": "weapon",
+                "id": 521,
+                "internal_name": "weapon_ak47",
+                "localized_name": "AK-47"
+              }
+            }
+          },
+          "item_id": null,
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f57b495d83b6fc4c89a2433RyrYvN405",
+          "steam_price": "7.44",
+          "steam_price_cny": "53.86"
+        },
+        "has_buff_price_history": true,
+        "id": 38178,
+        "market_hash_name": "StatTrak\u2122 AK-47 | Elite Build (Minimal Wear)",
+        "market_min_price": "0",
+        "name": "StatTrak\u2122 AK-47 | Elite Build (Minimal Wear)",
+        "quick_price": "41.49",
+        "sell_min_price": "41.59",
+        "sell_num": 1879,
+        "sell_reference_price": "41.59",
+        "short_name": "StatTrak\u2122 AK-47 | Elite Build (Minimal Wear)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20AK-47%20%7C%20Elite%20Build%20%28Minimal%20Wear%29",
+        "transacted_num": 0
+      }
+    ],
+    "page_num": 1,
+    "page_size": 2,
+    "total_count": 407,
+    "total_page": 204
+  },
+  "msg": null
+}
