@@ -2,10 +2,9 @@ package alekseew.services.exchange;
 
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
-import alekseew.services.IJsonParser;
 
 @Component
-public class ExchangeJsonParser implements IJsonParser {
+public class ExchangeJsonParser {
     public double getUsdToRub(String body){
         JSONObject object=new JSONObject(body);
         return object.getJSONObject("Valute").getJSONObject("USD").getDouble("Value");

@@ -11,7 +11,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 @Component
 public class CsMoneyService implements IService {
@@ -24,7 +23,6 @@ public class CsMoneyService implements IService {
     public CsMoneyItem searchByName(String name) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         String encodedString = URLEncoder.encode(name, StandardCharsets.UTF_8);
-
         URI uri = URI.create("https://cs.money/1.0/market/sell-orders?limit=1&name="+encodedString+"&order=asc&sort=price");
         HttpRequest request=HttpRequest
                 .newBuilder()
@@ -32,11 +30,11 @@ public class CsMoneyService implements IService {
                 .GET()
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        List<CsMoneyItem> csMoneyItems = csMoneyJsonParser.parseResponseToList(response.body());
-        if(csMoneyItems.isEmpty()){
+        CsMoneyItem csMoneyItem = csMoneyJsonParser.parseResponseToItem(response.body());
+        if(csMoneyItem==null){
             return new CsMoneyItem(name,0);
         }
-        return csMoneyItems.get(0);
+        return csMoneyItem;
     }
 
 }

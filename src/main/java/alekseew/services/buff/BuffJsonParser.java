@@ -4,14 +4,11 @@ import alekseew.entity.BuffItem;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
-import alekseew.services.IJsonParser;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class BuffJsonParser implements IJsonParser {
+public class BuffJsonParser {
     public BuffItem parseJsonBuff(JSONObject object) {
         String name=object.getString("name");
         double buffPrice=object.getDouble("sell_min_price");
