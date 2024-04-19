@@ -28,7 +28,7 @@ public class TestBuffJsonParser {
     }
     @Test
     void whenBuffJsonParserGetRightResponseThenReturnListItems(){
-        String fileName = "C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\buffJsonRightResponseWithManyItems";
+        String fileName = "C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\buffJsonRightResponseWithManyItems.json";
         StringBuilder line = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String currentLine;
@@ -44,7 +44,7 @@ public class TestBuffJsonParser {
     }
     @Test
     void whenBuffJsonParserGetBadResponseThenReturnEmptyList(){
-        String fileName = "C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\buffJsonBadResponse";
+        String fileName = "C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\buffJsonBadResponse.json";
         StringBuilder line = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String currentLine;

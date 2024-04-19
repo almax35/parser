@@ -12,7 +12,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 @Component
 public class CsMarketService implements IService {
@@ -32,10 +31,10 @@ public class CsMarketService implements IService {
                 .GET()
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        List<CsMarketItem> csMarketItems = csMarketJsonParse.parseResponseToList(response.body());
-        if(csMarketItems.isEmpty()){
+        CsMarketItem csMarketItem = csMarketJsonParse.parseResponseToItem(response.body());
+        if(csMarketItem==null){
             return new CsMarketItem(name,0);
         }
-        return csMarketItems.get(0);
+        return csMarketItem;
     }
 }

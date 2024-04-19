@@ -5,6 +5,7 @@ import alekseew.entity.ItemCategory;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.io.IOException;
+import java.util.List;
 
 public class TestBuffService {
     @Test
@@ -30,8 +31,25 @@ public class TestBuffService {
     @Test
     void whenBuffServiceSearchWithRightParams() throws IOException, InterruptedException{
         double minPrice=100;
-        double maxPrice=100;
-
+        double maxPrice=1000;
+        BuffService buffService=new BuffService(new BuffJsonParser(),new ItemCategory());
+        int size=10;
+        String type="weapon_ak47";
+        List<BuffItem> items=buffService.searchWithParams(minPrice,maxPrice,size,type);
+        assertEquals(items.size(),size);
+        for (BuffItem item: items) {
+            assertAll(() -> assertTrue(item.getBuffPrice()>=100 && item.getBuffPrice()<=1000),
+                    () -> assertTrue(item.getSteamPrice() >=100),
+                    () -> assertNotNull(item.getSteamHref()),
+                    () -> assertNotNull(item.getImageHref()));
+        }
     }
-
+    @Test
+    void whenBuffServiceSearchWithBadParams() throws IOException, InterruptedException{
+        double minPrice=1000;
+        double maxPrice=100;
+        BuffService buffService=new BuffService(new BuffJsonParser(),new ItemCategory());
+        List<BuffItem> items=buffService.searchWithParams(minPrice,maxPrice,3,"bad type");
+        assertNull(items);
+    }
 }
