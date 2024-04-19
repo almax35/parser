@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestCsMarketService {
     @Test
-    void whenBuffServiceSearchWithRightName() throws IOException, InterruptedException {
+    void whenBuffServiceSearchWithRightNameThenReturnCsMarketItem() throws IOException, InterruptedException {
         String name="UMP-45 | Exposure (Factory New)";
         CsMarketService csMarketService=new CsMarketService(new CsMarketJsonParser());
         CsMarketItem item=csMarketService.searchByName(name);
@@ -16,7 +16,7 @@ public class TestCsMarketService {
     }
 
     @Test
-    void whenBuffServiceSearchWithWrongName() throws IOException, InterruptedException {
+    void whenBuffServiceSearchWithWrongNameThenReturnNull() throws IOException, InterruptedException {
         String name="Wrong name";
         CsMarketService csMarketService=new CsMarketService(new CsMarketJsonParser());
         CsMarketItem item=csMarketService.searchByName(name);

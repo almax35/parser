@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestCsMoneyJsonParser {
     @Test
-    void whenCsMarketJsonParserGetRightResponseThenReturnCsMarketItem(){
+    void whenCsMoneyJsonParserGetRightResponseThenReturnCsMoneyItemThenReturnCsMoneyItem(){
         try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\csMoneyJsonRightResponseWithOneItem.json"))) {
             CsMoneyJsonParser csMoneyJsonParser=new CsMoneyJsonParser();
             CsMoneyItem item=csMoneyJsonParser.parseResponseToItem(reader.readLine());
@@ -22,7 +22,7 @@ public class TestCsMoneyJsonParser {
         }
     }
     @Test
-    void whenCsMarketJsonParserGetBadResponse(){
+    void whenCsMoneyJsonParserGetBadResponseThenReturnNull(){
         try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\csMoneyJsonBadResponse.json"))) {
             CsMoneyJsonParser csMoneyJsonParser=new CsMoneyJsonParser();
             CsMoneyItem item=csMoneyJsonParser.parseResponseToItem(reader.readLine());

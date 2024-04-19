@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestExchangeService {
     @Test
-    void whenExchangeServiceCalledThenReturnWithListOfValute() throws IOException, InterruptedException {
+    void whenExchangeServiceCalledThenReturnListOfValute() throws IOException, InterruptedException {
         ExchangeService exchangeService=new ExchangeService(new ExchangeJsonParser());
         List<Double> courses = exchangeService.saveValuteCourse();
         assertEquals(courses.size(),2);

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class TestBuffService {
     @Test
-    void whenBuffServiceSearchWithRightName() throws IOException, InterruptedException {
+    void whenBuffServiceSearchWithRightNameThenReturnBuffItem() throws IOException, InterruptedException {
         String name="UMP-45 | Exposure (Factory New)";
         BuffService buffService=new BuffService(new BuffJsonParser(),new ItemCategory());
         BuffItem item=buffService.searchByName(name);
@@ -21,7 +21,7 @@ public class TestBuffService {
     }
 
     @Test
-    void whenBuffServiceSearchWithWrongName() throws IOException, InterruptedException {
+    void whenBuffServiceSearchWithWrongNameThenReturnNull() throws IOException, InterruptedException {
         String name="Wrong name";
         BuffService buffService=new BuffService(new BuffJsonParser(),new ItemCategory());
         BuffItem item=buffService.searchByName(name);
@@ -29,7 +29,7 @@ public class TestBuffService {
     }
 
     @Test
-    void whenBuffServiceSearchWithRightParams() throws IOException, InterruptedException{
+    void whenBuffServiceSearchWithRightParamsThenReturnBuffItems() throws IOException, InterruptedException{
         double minPrice=100;
         double maxPrice=1000;
         BuffService buffService=new BuffService(new BuffJsonParser(),new ItemCategory());
@@ -45,7 +45,7 @@ public class TestBuffService {
         }
     }
     @Test
-    void whenBuffServiceSearchWithBadParams() throws IOException, InterruptedException{
+    void whenBuffServiceSearchWithBadParamsThenReturnNull() throws IOException, InterruptedException{
         double minPrice=1000;
         double maxPrice=100;
         BuffService buffService=new BuffService(new BuffJsonParser(),new ItemCategory());

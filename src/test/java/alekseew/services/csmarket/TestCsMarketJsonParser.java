@@ -13,7 +13,7 @@ public class TestCsMarketJsonParser {
         try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\csMarketJsonRightResponseWithOneItem.json"))) {
             CsMarketJsonParser csMarketJsonParser=new CsMarketJsonParser();
             CsMarketItem item=csMarketJsonParser.parseResponseToItem(reader.readLine());
-            CsMarketItem realItem=new CsMarketItem("AK-47 | Elite Build (Well-Worn))",66.74);
+            CsMarketItem realItem=new CsMarketItem("AK-47 | Elite Build (Well-Worn)",66.74);
             assertAll(
                     () -> assertEquals(item.getName(), realItem.getName()),
                     () -> assertEquals(item.getPrice(),realItem.getPrice()));
@@ -22,7 +22,7 @@ public class TestCsMarketJsonParser {
         }
     }
     @Test
-    void whenCsMarketJsonParserGetBadResponse(){
+    void whenCsMarketJsonParserGetBadResponseThenReturnNull(){
         try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\Spectra\\IdeaProjects\\TableParser\\src\\test\\resources\\csMarketJsonBadResponse.json"))) {
             CsMarketJsonParser csMarketJsonParser=new CsMarketJsonParser();
             CsMarketItem item=csMarketJsonParser.parseResponseToItem(reader.readLine());
