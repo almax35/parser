@@ -9,20 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="Test CsMarketService and CsMarketJsonParser">
-      <change afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyJsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csMoneyJsonBadResponse.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csMoneyJsonRightResponseWithOneItem.json" afterDir="false" />
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="Test CsMoneyService and CsMoneyJsonParser">
+      <change afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/exchange/TestExchangeJsonParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/exchange/TestExchangeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cbrRightResponse.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/IJsonParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,38 +84,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCsMoneyService">
-    <configuration name="TestCsMarketService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TableParser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="alekseew.services.csmarket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="alekseew.services.csmarket" />
-      <option name="MAIN_CLASS_NAME" value="alekseew.services.csmarket.TestCsMarketService" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCsMarketService.whenBuffServiceSearchWithWrongName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TableParser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="alekseew.services.csmarket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="alekseew.services.csmarket" />
-      <option name="MAIN_CLASS_NAME" value="alekseew.services.csmarket.TestCsMarketService" />
-      <option name="METHOD_NAME" value="whenBuffServiceSearchWithWrongName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestExchangeService.whenExchangeServiceCalledThenReturnWithListOfValute">
     <configuration name="TestCsMoneyJsonParser.whenCsMarketJsonParserGetBadResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TableParser" />
       <extension name="coverage">
@@ -167,6 +128,38 @@
       <option name="PACKAGE_NAME" value="alekseew.services.csmoney" />
       <option name="MAIN_CLASS_NAME" value="alekseew.services.csmoney.TestCsMoneyService" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestExchangeJsonParser.whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TableParser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alekseew.services.exchange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alekseew.services.exchange" />
+      <option name="MAIN_CLASS_NAME" value="alekseew.services.exchange.TestExchangeJsonParser" />
+      <option name="METHOD_NAME" value="whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestExchangeService.whenExchangeServiceCalledThenReturnWithListOfValute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TableParser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alekseew.services.exchange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alekseew.services.exchange" />
+      <option name="MAIN_CLASS_NAME" value="alekseew.services.exchange.TestExchangeService" />
+      <option name="METHOD_NAME" value="whenExchangeServiceCalledThenReturnWithListOfValute" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -259,20 +252,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestCsMarketService" />
-      <item itemvalue="JUnit.TestCsMarketService.whenBuffServiceSearchWithWrongName" />
       <item itemvalue="JUnit.TestCsMoneyJsonParser.whenCsMarketJsonParserGetBadResponse" />
       <item itemvalue="JUnit.TestCsMoneyJsonParser.whenCsMarketJsonParserGetRightResponseThenReturnCsMarketItem" />
       <item itemvalue="JUnit.TestCsMoneyService" />
+      <item itemvalue="JUnit.TestExchangeJsonParser.whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" />
+      <item itemvalue="JUnit.TestExchangeService.whenExchangeServiceCalledThenReturnWithListOfValute" />
       <item itemvalue="Tomcat Server.9" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestExchangeService.whenExchangeServiceCalledThenReturnWithListOfValute" />
+        <item itemvalue="JUnit.TestExchangeJsonParser.whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" />
         <item itemvalue="JUnit.TestCsMoneyService" />
         <item itemvalue="JUnit.TestCsMoneyJsonParser.whenCsMarketJsonParserGetBadResponse" />
         <item itemvalue="JUnit.TestCsMoneyJsonParser.whenCsMarketJsonParserGetRightResponseThenReturnCsMarketItem" />
-        <item itemvalue="JUnit.TestCsMarketService.whenBuffServiceSearchWithWrongName" />
-        <item itemvalue="JUnit.TestCsMarketService" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +309,7 @@
       <workItem from="1713362917124" duration="14996000" />
       <workItem from="1713397763061" duration="2821000" />
       <workItem from="1713444950424" duration="11527000" />
-      <workItem from="1713488199480" duration="11536000" />
+      <workItem from="1713488199480" duration="12758000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -451,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713537187560</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Test CsMoneyService and CsMoneyJsonParser">
+      <created>1713547294969</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713547294969</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,6 +477,7 @@
     <MESSAGE value="architecture of tests" />
     <MESSAGE value="test buffJsonParser" />
     <MESSAGE value="Test CsMarketService and CsMarketJsonParser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test CsMarketService and CsMarketJsonParser" />
+    <MESSAGE value="Test CsMoneyService and CsMoneyJsonParser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test CsMoneyService and CsMoneyJsonParser" />
   </component>
 </project>
