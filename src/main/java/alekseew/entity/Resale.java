@@ -8,8 +8,8 @@ public class Resale {
 
 
     public Resale(String name, double percent, String firstMarket, String secondMarket) {
-        this.name=name;
-        this.percent = Math.round(percent* 100.0) / 100.0;
+        this.name = name;
+        this.percent = Math.round(percent * 100.0) / 100.0;
         this.firstMarket = firstMarket;
         this.secondMarket = secondMarket;
     }
@@ -20,6 +20,7 @@ public class Resale {
     public double getPercent() {
         return percent;
     }
+
     public String getName() {
         return name;
     }

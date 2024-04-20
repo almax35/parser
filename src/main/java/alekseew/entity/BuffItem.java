@@ -1,6 +1,6 @@
 package alekseew.entity;
 
-public class BuffItem implements ItemInterface{
+public class BuffItem implements ItemInterface {
     private final String name;
     private final double buffPrice;
     private final double steamPrice;

@@ -1,14 +1,17 @@
 package alekseew.entity;
 
-public class CsMarketItem implements ItemInterface{
+public class CsMarketItem implements ItemInterface {
     private String name;
     private final double price;
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public double getPrice() {
         return price;
     }

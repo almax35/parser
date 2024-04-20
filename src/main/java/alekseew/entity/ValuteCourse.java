@@ -10,9 +10,9 @@ public class ValuteCourse {
     private final double uah;
 
     public ValuteCourse() throws IOException, InterruptedException {
-        ExchangeService service=new ExchangeService(new ExchangeJsonParser());
-        this.usd =service.saveValuteCourse().get(0);
-        this.uah =service.saveValuteCourse().get(1);
+        ExchangeService service = new ExchangeService(new ExchangeJsonParser());
+        this.usd = service.saveValuteCourse().get(0);
+        this.uah = service.saveValuteCourse().get(1);
     }
 
     public double getUsd() {

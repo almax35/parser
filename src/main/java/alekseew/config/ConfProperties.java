@@ -3,6 +3,7 @@ package alekseew.config;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
 public class ConfProperties {
     protected static FileInputStream fileInputStream;
     private static Properties PROPERTIES;
@@ -23,6 +24,7 @@ public class ConfProperties {
                 }
         }
     }
+
     public static String getProperty(String key) {
         return PROPERTIES.getProperty(key);
     }
