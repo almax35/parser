@@ -9,12 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="Test ExchangeService and ExchangeJsonParser">
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="refactoring">
+      <change afterPath="$PROJECT_DIR$/src/test/java/alekseew/entity/TestTableString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/TestMainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/buff/TestBuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/buff/TestBuffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +86,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestBuffService.whenBuffServiceSearchWithRightNameThenReturnBuffItem">
-    <configuration name="TestBuffService.whenBuffServiceSearchWithRightNameThenReturnBuffItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestMainService.whenMainServiceCalledFindMaxPercentageAtAllThenReturnBestResale">
+    <configuration name="TestBuffService.whenBuffServiceSearchWithRightParamsThenReturnBuffItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TableParser" />
       <extension name="coverage">
         <pattern>
@@ -95,70 +97,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="alekseew.services.buff" />
       <option name="MAIN_CLASS_NAME" value="alekseew.services.buff.TestBuffService" />
-      <option name="METHOD_NAME" value="whenBuffServiceSearchWithRightNameThenReturnBuffItem" />
+      <option name="METHOD_NAME" value="whenBuffServiceSearchWithRightParamsThenReturnBuffItems" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCsMoneyJsonParser.whenCsMarketJsonParserGetBadResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMainService.whenBuffServiceSearchWithBadParamsThenReturnNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TableParser" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alekseew.services.csmoney.*" />
+          <option name="PATTERN" value="alekseew.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alekseew.services.csmoney" />
-      <option name="MAIN_CLASS_NAME" value="alekseew.services.csmoney.TestCsMoneyJsonParser" />
-      <option name="METHOD_NAME" value="whenCsMarketJsonParserGetBadResponse" />
+      <option name="PACKAGE_NAME" value="alekseew.services" />
+      <option name="MAIN_CLASS_NAME" value="alekseew.services.TestMainService" />
+      <option name="METHOD_NAME" value="whenBuffServiceSearchWithBadParamsThenReturnNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCsMoneyService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMainService.whenMainServiceCalledFindMaxPercentageAtAllThenReturnBestResale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TableParser" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alekseew.services.csmoney.*" />
+          <option name="PATTERN" value="alekseew.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alekseew.services.csmoney" />
-      <option name="MAIN_CLASS_NAME" value="alekseew.services.csmoney.TestCsMoneyService" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestExchangeJsonParser.whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TableParser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="alekseew.services.exchange.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="alekseew.services.exchange" />
-      <option name="MAIN_CLASS_NAME" value="alekseew.services.exchange.TestExchangeJsonParser" />
-      <option name="METHOD_NAME" value="whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" />
+      <option name="PACKAGE_NAME" value="alekseew.services" />
+      <option name="MAIN_CLASS_NAME" value="alekseew.services.TestMainService" />
+      <option name="METHOD_NAME" value="whenMainServiceCalledFindMaxPercentageAtAllThenReturnBestResale" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestExchangeService.whenExchangeServiceCalledThenReturnWithListOfValute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMainService.whenMainServiceSortTableThenReturnSortedTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TableParser" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alekseew.services.exchange.*" />
+          <option name="PATTERN" value="alekseew.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alekseew.services.exchange" />
-      <option name="MAIN_CLASS_NAME" value="alekseew.services.exchange.TestExchangeService" />
-      <option name="METHOD_NAME" value="whenExchangeServiceCalledThenReturnWithListOfValute" />
+      <option name="PACKAGE_NAME" value="alekseew.services" />
+      <option name="MAIN_CLASS_NAME" value="alekseew.services.TestMainService" />
+      <option name="METHOD_NAME" value="whenMainServiceSortTableThenReturnSortedTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTableString.whenFindMarketsWithMaxPercentCalledThenReturnResale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TableParser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alekseew.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alekseew.entity" />
+      <option name="MAIN_CLASS_NAME" value="alekseew.entity.TestTableString" />
+      <option name="METHOD_NAME" value="whenFindMarketsWithMaxPercentCalledThenReturnResale" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,20 +255,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestBuffService.whenBuffServiceSearchWithRightNameThenReturnBuffItem" />
-      <item itemvalue="JUnit.TestCsMoneyJsonParser.whenCsMarketJsonParserGetBadResponse" />
-      <item itemvalue="JUnit.TestCsMoneyService" />
-      <item itemvalue="JUnit.TestExchangeJsonParser.whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" />
-      <item itemvalue="JUnit.TestExchangeService.whenExchangeServiceCalledThenReturnWithListOfValute" />
+      <item itemvalue="JUnit.TestBuffService.whenBuffServiceSearchWithRightParamsThenReturnBuffItems" />
+      <item itemvalue="JUnit.TestMainService.whenBuffServiceSearchWithBadParamsThenReturnNull" />
+      <item itemvalue="JUnit.TestMainService.whenMainServiceCalledFindMaxPercentageAtAllThenReturnBestResale" />
+      <item itemvalue="JUnit.TestMainService.whenMainServiceSortTableThenReturnSortedTable" />
+      <item itemvalue="JUnit.TestTableString.whenFindMarketsWithMaxPercentCalledThenReturnResale" />
       <item itemvalue="Tomcat Server.9" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestBuffService.whenBuffServiceSearchWithRightNameThenReturnBuffItem" />
-        <item itemvalue="JUnit.TestExchangeService.whenExchangeServiceCalledThenReturnWithListOfValute" />
-        <item itemvalue="JUnit.TestExchangeJsonParser.whenExchangeJsonParserGetRightResponseThenReturnUsdAndCny" />
-        <item itemvalue="JUnit.TestCsMoneyService" />
-        <item itemvalue="JUnit.TestCsMoneyJsonParser.whenCsMarketJsonParserGetBadResponse" />
+        <item itemvalue="JUnit.TestMainService.whenMainServiceCalledFindMaxPercentageAtAllThenReturnBestResale" />
+        <item itemvalue="JUnit.TestTableString.whenFindMarketsWithMaxPercentCalledThenReturnResale" />
+        <item itemvalue="JUnit.TestMainService.whenMainServiceSortTableThenReturnSortedTable" />
+        <item itemvalue="JUnit.TestMainService.whenBuffServiceSearchWithBadParamsThenReturnNull" />
+        <item itemvalue="JUnit.TestBuffService.whenBuffServiceSearchWithRightParamsThenReturnBuffItems" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +312,9 @@
       <workItem from="1713362917124" duration="14996000" />
       <workItem from="1713397763061" duration="2821000" />
       <workItem from="1713444950424" duration="11527000" />
-      <workItem from="1713488199480" duration="13471000" />
+      <workItem from="1713488199480" duration="14251000" />
+      <workItem from="1713557162263" duration="2720000" />
+      <workItem from="1713568381348" duration="4705000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -458,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713548623549</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="refactoring">
+      <created>1713549267548</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713549267548</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,6 +498,7 @@
     <MESSAGE value="Test CsMarketService and CsMarketJsonParser" />
     <MESSAGE value="Test CsMoneyService and CsMoneyJsonParser" />
     <MESSAGE value="Test ExchangeService and ExchangeJsonParser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test ExchangeService and ExchangeJsonParser" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>

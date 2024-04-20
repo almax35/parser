@@ -22,7 +22,9 @@ public class MainService {
    private final ValuteCourse valuteCourse;
    private List<TableString> strings;
 
-   @Autowired
+
+
+    @Autowired
    public MainService(BuffService buffService, CsMoneyService csMoneyService, CsMarketService csMarketService) throws IOException, InterruptedException {
         this.buffService = buffService;
         this.csMoneyService = csMoneyService;
@@ -91,7 +93,7 @@ public class MainService {
     }
     public Resale findMaxPercentageAtAll(){
        double maxPercentage=Double.MIN_VALUE;
-        Resale resale=new Resale();
+       Resale resale=new Resale();
        for (TableString string: strings){
            if (string.findMarketsWithMaxPercent().getPercent()>maxPercentage){
                maxPercentage=string.findMarketsWithMaxPercent().getPercent();
@@ -102,5 +104,8 @@ public class MainService {
     }
     public  List<TableString> getStrings() {
         return strings;
+    }
+    public void setStrings(List<TableString> strings) {
+        this.strings = strings;
     }
 }

@@ -41,7 +41,8 @@ public class TestBuffService {
             assertAll(() -> assertTrue(item.getBuffPrice()>=100 && item.getBuffPrice()<=1000),
                     () -> assertTrue(item.getSteamPrice() >=100),
                     () -> assertNotNull(item.getSteamHref()),
-                    () -> assertNotNull(item.getImageHref()));
+                    () -> assertNotNull(item.getImageHref()),
+                    () -> assertTrue(item.getName().startsWith("AK-47")));
         }
     }
     @Test
