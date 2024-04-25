@@ -9,37 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="Test MainService">
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="Refactoring code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/config/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/config/ConfProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/config/MySpringMvcDispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/entity/BuffItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/BuffItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/entity/CsMarketItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/CsMarketItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/entity/CsMoneyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/CsMoneyItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/entity/Resale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/Resale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/entity/TableString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/TableString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/entity/ValuteCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/entity/ValuteCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/buff/BuffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmarket/CsMarketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/csmoney/CsMoneyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/exchange/ExchangeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/entity/TestTableString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/entity/TestTableString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/TestMainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/TestMainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/buff/TestBuffJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/buff/TestBuffJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/buff/TestBuffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/buff/TestBuffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmarket/TestCsMarketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alekseew/services/csmoney/TestCsMoneyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +69,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a553815dc72231f7b3203bdad4ec66ab&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -336,7 +308,14 @@
       <workItem from="1713444950424" duration="11527000" />
       <workItem from="1713488199480" duration="14251000" />
       <workItem from="1713557162263" duration="2720000" />
-      <workItem from="1713568381348" duration="5617000" />
+      <workItem from="1713568381348" duration="5943000" />
+      <workItem from="1713804285564" duration="4772000" />
+      <workItem from="1713809920858" duration="203000" />
+      <workItem from="1713810146815" duration="2263000" />
+      <workItem from="1713816132724" duration="53000" />
+      <workItem from="1713872233978" duration="4649000" />
+      <workItem from="1713898723839" duration="5310000" />
+      <workItem from="1714076175080" duration="2310000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -499,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713577530284</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Refactoring code">
+      <created>1713578501301</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713578501301</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,6 +515,11 @@
     <MESSAGE value="Test ExchangeService and ExchangeJsonParser" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="Test MainService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test MainService" />
+    <MESSAGE value="Refactoring code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
