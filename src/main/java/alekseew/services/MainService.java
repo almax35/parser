@@ -96,6 +96,9 @@ public class MainService {
     public Resale findMaxPercentageAtAll() {
         double maxPercentage = Double.MIN_VALUE;
         Resale resale = new Resale();
+        if (strings==null){
+            return null;
+        }
         for (TableString string : strings) {
             if (string.findMarketsWithMaxPercent().getPercent() > maxPercentage) {
                 maxPercentage = string.findMarketsWithMaxPercent().getPercent();

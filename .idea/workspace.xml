@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="update dependencies">
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="fix bug in search name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" afterDir="false" />
     </list>
@@ -317,7 +317,8 @@
       <workItem from="1713898723839" duration="5310000" />
       <workItem from="1714076175080" duration="2367000" />
       <workItem from="1714129132270" duration="794000" />
-      <workItem from="1714130019095" duration="472000" />
+      <workItem from="1714130019095" duration="514000" />
+      <workItem from="1714130569076" duration="1355000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -494,14 +495,20 @@
       <option name="project" value="LOCAL" />
       <updated>1714080092809</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix bug in search name">
+      <created>1714130531199</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714130531199</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="add config" />
     <MESSAGE value="CsMarketService add" />
     <MESSAGE value="CsMoneyService add" />
@@ -526,7 +533,8 @@
     <MESSAGE value="Test MainService" />
     <MESSAGE value="Refactoring code" />
     <MESSAGE value="update dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="update dependencies" />
+    <MESSAGE value="fix bug in search name" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug in search name" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
