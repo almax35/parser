@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="Refactoring code">
+    <list default="true" id="d7a1c5d0-a931-4e7f-a2fc-c836c647e531" name="Changes" comment="update dependencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alekseew/services/MainService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +315,9 @@
       <workItem from="1713816132724" duration="53000" />
       <workItem from="1713872233978" duration="4649000" />
       <workItem from="1713898723839" duration="5310000" />
-      <workItem from="1714076175080" duration="2310000" />
+      <workItem from="1714076175080" duration="2367000" />
+      <workItem from="1714129132270" duration="794000" />
+      <workItem from="1714130019095" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1710695162998</created>
@@ -485,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713578501301</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update dependencies">
+      <created>1714080092809</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1714080092809</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +525,8 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="Test MainService" />
     <MESSAGE value="Refactoring code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code" />
+    <MESSAGE value="update dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dependencies" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -39,15 +39,16 @@ public class MainService {
         if (buffItem == null) {
             return null;
         }
+        String realName=buffItem.getName();
         double roundBuffPrice = Math.round(buffItem.getBuffPrice() * valuteCourse.getUah() * 100.0) / 100.0;
         double roundSteamPrice = Math.round(buffItem.getSteamPrice() * valuteCourse.getUah() * 100.0) / 100.0;
-        double roundCsMoneyPrice = Math.round(csMoneyService.searchByName(name).getPrice() * valuteCourse.getUsd() * 100.0) / 100.0;
+        double roundCsMoneyPrice = Math.round(csMoneyService.searchByName(realName).getPrice() * valuteCourse.getUsd() * 100.0) / 100.0;
         tableString.setName(buffItem.getName());
         tableString.setBuffPrice(roundBuffPrice);
         tableString.setSteamPrice(roundSteamPrice);
         tableString.setSteamHref(buffItem.getSteamHref());
         tableString.setImageHref(buffItem.getImageHref());
-        tableString.setCsMarketPrice(csMarketService.searchByName(name).getPrice());
+        tableString.setCsMarketPrice(csMarketService.searchByName(realName).getPrice());
         tableString.setCsMoneyPrice(roundCsMoneyPrice);
         tableStrings.add(tableString);
         strings = tableStrings;
